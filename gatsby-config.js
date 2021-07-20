@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "My Gatsby Site",
+    title: "Gatsby Site",
   },
   plugins: [
     "gatsby-plugin-image",
@@ -11,10 +11,9 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
-      },
-      __key: "images",
+        name: `blog`,
+        path: `${__dirname}/blog`,
+      }
     },
   ],
 };
